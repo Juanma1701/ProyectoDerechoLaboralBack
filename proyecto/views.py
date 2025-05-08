@@ -86,6 +86,10 @@ class DeleteUser(APIView):
             })
 
 
+class CreateLey(APIView):
+    def post(self,request):
+        # esto es para crear una ley
+        pass
 
         
         
