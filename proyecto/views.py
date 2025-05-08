@@ -46,7 +46,7 @@ class RegistrarUsuario(APIView):
         return Response(data={'message': f'Usuario creado correctamente. Tu nombre es: {name}', 'respuesta': 201}, status=201)
 
 
-
+# esto es para logirse un usuario
 class LoginUsuario(APIView):
     def post(self, request):
         if request.method == "POST":
@@ -71,7 +71,7 @@ class LoginUsuario(APIView):
 
 class DeleteUser(APIView):
     def delete(self,request,id):
-        
+        #esto es para eliminar un usuario
         try:
             u = Users.objects.get(pk=id)
             u.delete()
